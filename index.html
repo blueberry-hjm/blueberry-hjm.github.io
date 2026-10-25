@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f7f3">
+  <meta name="description" content="Huang Jiaming is a Ph.D. student at the University of Electronic Science and Technology of China, working on NLP and multimodal affective computing.">
+  <title>Huang Jiaming — Academic Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f7f3;--white:#fff;--ink:#162421;--muted:#65716d;--line:#dfe5df;--green:#347664;--lime:#d9e85d;--blue:#dce9e5;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--mono:'DM Mono',monospace}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 56px));margin:auto}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-weight:700;letter-spacing:-.04em;font-size:19px}.brand span{color:var(--green)}nav{display:flex;gap:27px;align-items:center;font-size:13px;color:#56635e}nav a:hover{color:var(--green)}.lang{border:1px solid var(--line);background:transparent;border-radius:99px;padding:8px 12px;font:12px var(--mono);cursor:pointer;color:var(--ink)}
+    .hero{display:grid;grid-template-columns:1.08fr .92fr;gap:68px;align-items:center;padding:78px 0 74px}.eyebrow,.section-kicker{font:11px var(--mono);letter-spacing:.13em;text-transform:uppercase;color:var(--green)}h1{font:500 clamp(48px,6.2vw,76px)/.99 var(--serif);letter-spacing:-.055em;margin:20px 0 8px}.cn-name{font-size:21px;color:#5c6a65;margin:0 0 20px;letter-spacing:.06em}.role{font-size:15px;color:#41514b;line-height:1.65;margin:0 0 18px}.intro{font-size:15px;color:#68746f;line-height:1.85;max-width:590px}.hero-links{display:flex;gap:11px;flex-wrap:wrap;margin-top:27px}.pill{font:12px var(--mono);border:1px solid var(--line);padding:10px 14px;border-radius:99px;transition:.2s}.pill:hover{border-color:var(--green);color:var(--green);transform:translateY(-1px)}.portrait{position:relative;max-width:430px;justify-self:end}.portrait:before{content:"";position:absolute;inset:22px -18px -18px 22px;background:var(--lime);border-radius:5px}.portrait img{width:100%;height:470px;object-fit:cover;object-position:57% 45%;display:block;position:relative;border-radius:4px;filter:saturate(.82)}.photo-note{position:absolute;right:-18px;bottom:17px;background:var(--white);padding:12px 16px;font:10px var(--mono);letter-spacing:.06em;color:var(--muted);z-index:1;box-shadow:0 8px 24px #15251e12}
+    .summary-kicker{font:10px var(--mono);letter-spacing:.13em;color:var(--green);text-transform:uppercase;margin:0 0 11px}.stats{border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(3,1fr);padding:23px 0;margin-bottom:77px}.stat{padding:0 25px;border-right:1px solid var(--line);transition:color .2s}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat:hover{color:var(--green)}.stat strong{font:500 23px var(--serif);display:block}.stat span{font:10px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.1em}.stat small{display:block;margin-top:9px;font:10px var(--sans);color:var(--muted);letter-spacing:0}.stat:hover small,.stat:focus-visible small{color:var(--green)}
+    section{padding:0 0 76px;scroll-margin-top:25px}.section-head{display:grid;grid-template-columns:210px 1fr;gap:35px;margin-bottom:27px}.section-kicker{padding-top:9px}.section-title{font:500 34px/1.15 var(--serif);letter-spacing:-.035em;margin:0}.section-lead{color:var(--muted);line-height:1.7;font-size:14px;margin:10px 0 0;max-width:730px}.research-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-left:245px}.research-card{background:var(--white);border:1px solid var(--line);padding:22px 20px 23px;min-height:155px;border-radius:4px}.number{font:10px var(--mono);color:var(--green)}.research-card h3{font:600 16px var(--sans);margin:16px 0 8px}.research-card p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}
+    .pub-list{border-top:1px solid var(--line)}.pub{display:grid;grid-template-columns:78px 1fr 140px;gap:22px;padding:21px 0;border-bottom:1px solid var(--line);align-items:start}.pub-year{font:11px var(--mono);color:var(--green);padding-top:3px}.pub h3{font-size:15px;line-height:1.5;margin:0 0 7px;font-weight:600}.authors{font-size:12px;color:#707b76;line-height:1.6}.venue{font-size:12px;color:#475650;line-height:1.5;font-style:italic;margin-top:3px}.tag{display:inline-block;margin-top:8px;padding:4px 8px;border-radius:99px;background:#e8efeb;color:#3c6256;font:10px var(--mono)}.tag.accepted{background:#f1f0e7;color:#77713e}.pub-link{justify-self:end;font:10px var(--mono);color:var(--green);padding-top:4px}.pub-link:hover{text-decoration:underline}
+    .service-panel{display:grid;grid-template-columns:1fr 1fr;gap:14px}.service-card{background:var(--white);border:1px solid var(--line);padding:24px;border-radius:4px}.service-card h3{font:500 21px var(--serif);margin:0 0 15px}.service-list{display:flex;flex-wrap:wrap;gap:8px}.service-chip{font-size:12px;padding:9px 11px;border:1px solid var(--line);border-radius:3px;color:#495952}.service-chip b{font-weight:600;color:var(--ink)}.service-note{font-size:11px;color:var(--muted);line-height:1.6;margin:13px 0 0}
+    .timeline{border-top:1px solid var(--line)}.timeline-row{display:grid;grid-template-columns:150px 1fr 150px;gap:20px;padding:17px 0;border-bottom:1px solid var(--line);font-size:13px}.timeline-row .date{font:10px var(--mono);color:var(--green);padding-top:3px}.timeline-row strong{font-weight:600}.timeline-row span:last-child{text-align:right;color:var(--muted);font-size:12px}
+    .footer{border-top:1px solid var(--line);padding:27px 0 34px;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:11px}.footer .mono{font:10px var(--mono);letter-spacing:.06em}
+    [data-lang="zh"]{display:none}.zh .en{display:none}.zh [data-lang="zh"]{display:revert}.zh [data-block="zh"]{display:block}.zh [data-block="en"]{display:none}
+    @media(max-width:800px){.wrap{width:min(100% - 36px,600px)}nav{gap:12px;font-size:11px}.nav-extra{display:none}.hero{grid-template-columns:1fr;gap:35px;padding:52px 0 46px}.portrait{justify-self:start;width:min(100%,420px);margin:0 18px 15px 0}.portrait img{height:420px}.stats{grid-template-columns:1fr;margin-bottom:58px}.stat{padding:13px 0;border-right:0;border-bottom:1px solid var(--line)}.stat:first-child{padding-top:0}.stat:last-child{border-bottom:0}.stat strong{font-size:20px}.section-head{grid-template-columns:1fr;gap:9px}.research-grid{margin-left:0;grid-template-columns:1fr}.research-card{min-height:unset}.pub{grid-template-columns:54px 1fr;gap:12px}.pub-link{grid-column:2;justify-self:start;padding-top:0}.service-panel{grid-template-columns:1fr}.timeline-row{grid-template-columns:90px 1fr;gap:10px}.timeline-row span:last-child{grid-column:2;text-align:left}.footer{flex-direction:column}.stat{padding:13px 0}.stat strong{font-size:20px}}
+    @media(max-width:480px){nav a:nth-child(n+4){display:none}.brand{font-size:17px}h1{font-size:52px}.portrait img{height:360px}.stats span{letter-spacing:0}.pub h3{font-size:14px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="topbar">
+      <a class="brand" href="#top">HJ<span>.</span></a>
+      <nav aria-label="Primary navigation">
+        <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a class="nav-extra" href="#service">Service</a><a class="nav-extra" href="#elsewhere">More</a>
+        <button class="lang" id="langToggle" aria-label="Switch language">中 / EN</button>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero" id="about">
+        <div>
+          <div class="eyebrow">Ph.D. Student · UESTC</div>
+          <h1>Huang<br>Jiaming</h1>
+          <p class="cn-name">黄珈铭</p>
+          <p class="role en">School of Computer Science and Engineering<br>University of Electronic Science and Technology of China</p>
+          <p class="role" data-lang="zh">电子科技大学 · 计算机科学与工程学院<br>博士研究生（2024—2028）</p>
+          <p class="intro en">I am a Ph.D. student working on natural language processing and affective computing. My research explores fine-grained sentiment understanding, multimodal learning, and multimodal large language models.</p>
+          <p class="intro" data-lang="zh">我现为电子科技大学计算机科学与工程学院博士研究生，研究方向包括自然语言处理、多模态情感计算与多模态大语言模型，关注细粒度情感理解及跨模态建模。</p>
+          <div class="hero-links"><a class="pill" href="#publications">Selected publications ↘</a><a class="pill" href="#service">Academic service ↘</a></div>
+        </div>
+        <div class="portrait"><img src="assets/huang-jiaming.jpg" alt="Huang Jiaming in Kyoto"><div class="photo-note">KYOTO · JAPAN</div></div>
+      </section>
+      <section id="research">
+        <div class="section-head"><div class="section-kicker">01 / Research</div><div><h2 class="section-title en">Questions I work on</h2><h2 class="section-title" data-lang="zh">研究方向</h2><p class="section-lead en">I study how models can identify, align, and reason about affective signals across domains and modalities.</p><p class="section-lead" data-lang="zh">我关注模型如何在跨领域、跨模态场景中识别、对齐并推理情感信息。</p></div></div>
+        <div class="research-grid">
+          <article class="research-card"><span class="number">01 — NLP</span><h3 class="en">Fine-grained Sentiment Analysis</h3><h3 data-lang="zh">细粒度情感分析</h3><p class="en">Aspect-level opinion extraction, sentiment quadruplet prediction, and cross-domain adaptation.</p><p data-lang="zh">方面级观点抽取、情感四元组预测与跨领域迁移。</p></article>
+          <article class="research-card"><span class="number">02 — MULTIMODAL</span><h3 class="en">Multimodal Affective Computing</h3><h3 data-lang="zh">多模态情感计算</h3><p class="en">Frequency-aware alignment and adaptive fusion of language, audio, and visual signals.</p><p data-lang="zh">语言、语音与视觉信号的频率感知对齐及自适应融合。</p></article>
+          <article class="research-card"><span class="number">03 — MLLM</span><h3 class="en">Multimodal Large Language Models</h3><h3 data-lang="zh">多模态大语言模型</h3><p class="en">Emotion perception and open-vocabulary affective understanding in complex settings.</p><p data-lang="zh">复杂场景下的情感感知与开放词汇情感理解。</p></article>
+        </div>
+      </section>
+      <p class="summary-kicker">Sections at a glance · select to jump</p>
+      <div class="stats" aria-label="Homepage sections at a glance">
+        <a class="stat" href="#publications"><strong>02 / PUBLICATIONS</strong><small>3 first-author · 3 collaborative papers</small></a><a class="stat" href="#service"><strong>03 / ACADEMIC SERVICE</strong><small>ICML 2025 · ACL 2025 · 3 journals</small></a><a class="stat" href="#elsewhere"><strong>04 / ACHIEVEMENTS</strong><small>2 patents · 2 competition results</small></a>
+      </div>
+      <section id="publications">
+        <div class="section-head"><div class="section-kicker">02 / Publications</div><div><h2 class="section-title en">Selected work</h2><h2 class="section-title" data-lang="zh">代表性成果</h2><p class="section-lead en">A selection of publications and accepted papers. Full details are available in my CV.</p><p class="section-lead" data-lang="zh">以下列出部分论文与已接收成果，完整信息请参见学术简历。</p></div></div>
+        <div class="pub-list">
+          <article class="pub" id="first-author-papers"><div class="pub-year">2027</div><div><h3>Frequency-aware alignment and modality-aware fusion for multimodal sentiment analysis</h3><div class="authors"><b>Huang Jiaming</b>, et al.</div><div class="venue">Information Fusion, 138, Article 104724</div><span class="tag">CAS Q1 · TOP</span> <span class="tag">Published</span></div><a class="pub-link" href="https://doi.org/10.1016/j.inffus.2026.104724" target="_blank" rel="noreferrer">DOI ↗</a></article>
+          <article class="pub"><div class="pub-year">2025</div><div><h3>An aspect-opinion joint extraction model for target-oriented opinion words extraction on global space</h3><div class="authors"><b>Huang Jiaming</b>, et al.</div><div class="venue">Applied Intelligence, 55:23</div><span class="tag">CAS Q2</span> <span class="tag">Published</span></div><a class="pub-link" href="https://doi.org/10.1007/s10489-024-05865-5" target="_blank" rel="noreferrer">DOI ↗</a></article>
+          <article class="pub"><div class="pub-year">2026</div><div><h3>Cross-Domain Aspect Sentiment Quadruplet Prediction with Self-Training and Progressive Contrastive Learning</h3><div class="authors"><b>Huang Jiaming</b>, et al.</div><div class="venue">ACAIT 2026</div><span class="tag accepted">Accepted · EI</span></div><span></span></article>
+          <article class="pub" id="collaborative-papers"><div class="pub-year">2026</div><div><h3>Retrieval-enhanced, Adaptively Collaborative, and Temporal-aware User Behavior Comprehension for LLM-based Sequential Recommendation</h3><div class="authors">Zheng Hu, Yongsen Pan, Zetao Li, <b>Jiaming Huang</b>, et al.</div><div class="venue">Information Processing &amp; Management, 63, 104354</div><span class="tag">CAS Q1 · TOP</span></div><a class="pub-link" href="https://doi.org/10.1016/j.ipm.2025.104354" target="_blank" rel="noreferrer">DOI ↗</a></article>
+          <article class="pub"><div class="pub-year">2026</div><div><h3>DCPM-OVMER: Open-Vocabulary Multimodal Emotion Recognition via Dynamic Context Power Modulation</h3><div class="authors">Bingyu Wan, Tianle Shi, <b>Jiaming Huang</b>, Fuji Ren</div><div class="venue">MRAC 2026 @ ACM Multimedia</div><span class="tag accepted">Accepted · Workshop</span></div><span></span></article>
+          <article class="pub"><div class="pub-year">2026</div><div><h3>Decoupling of Multidimensional Semantics for LLMs via HSIC: Mitigating Shortcut Learning in Financial Narratives</h3><div class="authors">Zhang M., Hu Z., Li X., Liu C., Huang J., et al.</div><div class="venue">ACAIT 2026</div><span class="tag accepted">Accepted · EI</span></div><span></span></article>
+        </div>
+      </section>
+      <section id="service">
+        <div class="section-head"><div class="section-kicker">03 / Academic Service</div><div><h2 class="section-title en">Peer review</h2><h2 class="section-title" data-lang="zh">学术审稿</h2><p class="section-lead en">Reviewer for international conferences and journals in machine learning, NLP, and intelligent systems.</p><p class="section-lead" data-lang="zh">为机器学习、自然语言处理与智能系统领域的国际会议和期刊提供同行评审。</p></div></div>
+        <div class="service-panel">
+          <div class="service-card"><h3>Conferences</h3><div class="service-list"><span class="service-chip"><b>ICML 2025</b> · CCF-A</span><span class="service-chip"><b>ACL 2025</b></span></div></div>
+          <div class="service-card"><h3>Journals</h3><div class="service-list"><span class="service-chip"><b>Knowledge-Based Systems</b> · CAS Q1 TOP</span><span class="service-chip"><b>Expert Systems with Applications</b> · ESWA</span><span class="service-chip"><b>Neural Networks</b> · CAS Q2</span></div><p class="service-note">Journal quartile labels follow the information provided by the researcher.</p></div>
+        </div>
+      </section>
+      <section id="elsewhere">
+        <div class="section-head"><div class="section-kicker">04 / Achievements</div><div><h2 class="section-title en">Education &amp; other achievements</h2><h2 class="section-title" data-lang="zh">教育与其他成果</h2></div></div>
+        <div class="timeline">
+          <div class="timeline-row"><span class="date">2024.09 — 2028.06</span><strong>Ph.D. Student · University of Electronic Science and Technology of China</strong><span>Chengdu, China</span></div>
+          <div class="timeline-row" id="competition-results"><span class="date">2026</span><strong>MER2026 Challenge · Track 2 (MER-FG), Rank 10</strong><span>Score 72.9024</span></div>
+          <div class="timeline-row"><span class="date">2025</span><strong>IEEE Xtreme 19.0 Programming Competition · OrangeTeam</strong><span>Global Rank 23</span></div>
+          <div class="timeline-row" id="patents"><span class="date">Patent</span><strong>Emotion analysis based on a global training space</strong><span>Granted · 2nd inventor</span></div>
+          <div class="timeline-row"><span class="date">Patent</span><strong>Multi-agent sentiment analysis for financial long texts</strong><span>Filed · 4th inventor</span></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><span>© 2026 Huang Jiaming · 黄珈铭</span><span class="mono">NLP · MULTIMODAL AFFECTIVE COMPUTING · MLLM</span></footer>
+  </div>
+  <script>
+    const btn=document.getElementById('langToggle');btn.addEventListener('click',()=>{const zh=document.body.classList.toggle('zh');document.documentElement.lang=zh?'zh-CN':'en';});
+  </script>
+</body>
+</html>
